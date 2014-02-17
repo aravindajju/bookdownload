@@ -150,7 +150,7 @@ function downloadBook(bookmetadata,callback){
 	//console.log(bookmetadata);
 	//http://www.dli.gov.in/data6/upload/0159/818/PTIFF/00000002.tif
 	var rq = request.defaults({});
-	//var rq = request.defaults({'proxy':'http://aravinda:1Lall!ajju@proxy2.wipro.com:8080'});
+	//var rq = request.defaults({'proxy':'http://aravinda:passcode@proxy2.wipro.com:8080'});
 	var directoryname= bookmetadata.booktitle;
 	var cleandir=directoryname.replace(/[|&;'$%@"<>()+,]/g, "");
 	var pdfdir = './'+cleandir+'-'+bookmetadata.barcode;////'d:/temp/'+cleandir;
