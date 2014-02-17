@@ -89,7 +89,7 @@ function getBookMetadata(barCode,callback)
 	var	bookdata;
 
 	var r = request.defaults({});
-	//var r = request.defaults({'proxy':'http://aravinda:1Lall!ajju@proxy2.wipro.com:8080'});
+	//var r = request.defaults({'proxy':'http://aravinda:passcode@proxy2.wipro.com:8080'});
 	r.get('http://www.dli.gov.in/cgi-bin/metainfo.cgi?&barcode=' + barCode, function (error, response, body) {
 	  if (!error && response.statusCode == 200) {
 		//console.log(body) // Print the google web page.
